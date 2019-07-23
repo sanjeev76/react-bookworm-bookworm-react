@@ -2,8 +2,10 @@
   "name": "bookworm-react",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:8080",
   "dependencies": {
     "axios": "^0.19.0",
+    "http-proxy-middleware": "^0.19.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -41,4 +43,6 @@
   "devDependencies": {
     "redux-devtools-extension": "^2.13.8"
   }
+
+  
 }
