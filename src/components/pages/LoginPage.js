@@ -6,12 +6,13 @@ import { login } from "../../actions/auth";
 
 class LoginPage extends React.Component {
     /* Now we have Redux so we can do Actions and Dispatch */
-    submit = data => this.props.login(data).then(()=> this.props.history.push("/") ); // dispatch thunk action with this data,
-                                                                                      // login thunk action and pass data, it 
-                                                                                      //will return promise and if everythin ok
-                                                                                      // then we will redirect to home page 
-                                                                                      // To direct we use history, history is 
-                                                                                      //pass into this component by react-router
+    // dispatch thunk action with this data,
+    // login thunk action and pass data, it 
+    //will return promise and if everythin ok
+    // then we will redirect to home page 
+    // To direct we use history, history is 
+    //pass into this component by react-router
+    submit = data => this.props.login(data).then(()=> this.props.history.push("/dashboard") ); 
     render() {
         return (
             <div>
